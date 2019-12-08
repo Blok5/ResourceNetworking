@@ -3,16 +3,12 @@
 // Описание: @warning добавить описание
 
 import Foundation
-import UIKit
+import ResourceNetworking
 
-//cmd + option + /
-/// Breed
-class Breed {
-    var name: String
-    var photo: UIImage?
+class Reachability: ReachabilityProtocol {
+    var isReachable: Bool
     
-    init(name: String, photo: UIImage?) {
-        self.name = name
-        self.photo = photo
+    init() {
+        self.isReachable = true
     }
 }

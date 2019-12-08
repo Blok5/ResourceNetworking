@@ -6,13 +6,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //TODO подключить модуль с view с круглой рамкой
     @IBOutlet weak var button: UIButton!
     
     override func loadView() {
         super.loadView()
         print("loadView")
         
-        button.setTitle("IGOR", for: .normal)
+        //button.setTitle("IGOR", for: .normal)
     }
     
     override func viewDidLoad() {

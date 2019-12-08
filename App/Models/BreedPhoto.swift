@@ -4,11 +4,11 @@
 
 import Foundation
 
-struct BreedArray {
-    let message: [String: [String]]
-    let status: String
+struct BreedPhoto: Codable {
+    let message: String?
+    let status: String?
     
-    init(message: [String: [String]], status: String) {
+    init(message: String?, status: String?) {
         self.message = message
         self.status = status
     }
