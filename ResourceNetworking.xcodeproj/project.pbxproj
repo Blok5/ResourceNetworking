@@ -228,16 +228,6 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		D59745252393CD7D00F5DDA2 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				D5E819452392AEB9005A6F18 /* Info.plist */,
-				D5E819372392AEB8005A6F18 /* AppDelegate.swift */,
-				D5E819392392AEB8005A6F18 /* SceneDelegate.swift */,
-			);
-			name = Application;
-			sourceTree = "<group>";
-		};
 		D59745262393CD9000F5DDA2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,15 +235,6 @@
 				D5E819422392AEB9005A6F18 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		D59745272393CDA800F5DDA2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D5E8193B2392AEB8005A6F18 /* ViewController.swift */,
-				D597451F2393C71100F5DDA2 /* BreedTableViewController.swift */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D59745282393CDBF00F5DDA2 /* Models */ = {
@@ -265,15 +246,6 @@
 				D5DEDBC4239D380900D89420 /* BreedImageAPI.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		D59745292393CE0500F5DDA2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D5DEDBC0239D20AA00D89420 /* BreedTableViewCell.swift */,
-				D5DEDBC1239D20AA00D89420 /* BreedTableViewCell.xib */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		D597452A2393CE1800F5DDA2 /* Resources */ = {
@@ -291,15 +263,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D5DEDBC8239D63C700D89420 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D5E819452392AEB9005A6F18 /* Info.plist */,
+				D5E819372392AEB8005A6F18 /* AppDelegate.swift */,
+				D5E819392392AEB8005A6F18 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D5DEDBC9239D63F400D89420 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5DEDBC0239D20AA00D89420 /* BreedTableViewCell.swift */,
+				D5DEDBC1239D20AA00D89420 /* BreedTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5DEDBCA239D640300D89420 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8193B2392AEB8005A6F18 /* ViewController.swift */,
+				D597451F2393C71100F5DDA2 /* BreedTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D5E819362392AEB8005A6F18 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				D59745252393CD7D00F5DDA2 /* Application */,
+				D5DEDBCA239D640300D89420 /* Controllers */,
+				D5DEDBC9239D63F400D89420 /* Views */,
+				D5DEDBC8239D63C700D89420 /* Application */,
 				D59745262393CD9000F5DDA2 /* Storyboards */,
 				D597452A2393CE1800F5DDA2 /* Resources */,
-				D59745292393CE0500F5DDA2 /* Views */,
 				D59745282393CDBF00F5DDA2 /* Models */,
-				D59745272393CDA800F5DDA2 /* Controllers */,
 			);
 			path = App;
 			sourceTree = "<group>";
