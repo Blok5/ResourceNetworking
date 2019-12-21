@@ -11,5 +11,5 @@ public protocol NetworkHelperProtocol: class {
 	///   - resource: ресурс
 	///   - completion: результат выполнения операции
 	/// - Returns: объект отмены операции загрузки данных
-	func load<A>(resource: Resource<A>, completion: @escaping (OperationCompletion<A>) -> ()) -> Cancellation?
+	func load<A>(resource: Resource<A>,completion: @escaping (OperationCompletion<A>) -> ()) -> Cancellation?
 }

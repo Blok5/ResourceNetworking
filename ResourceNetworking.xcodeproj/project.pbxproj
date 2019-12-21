@@ -27,16 +27,14 @@
 		844E1924238D4DEC00D6F38B /* CancelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1923238D4DEC00D6F38B /* CancelTests.swift */; };
 		844E1927238D511000D6F38B /* FakeReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1926238D511000D6F38B /* FakeReachability.swift */; };
 		D54D3811239EB9930067A5B7 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D3810239EB9930067A5B7 /* CircleButton.swift */; };
-		D54D382523A01BE40067A5B7 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D382423A01BE40067A5B7 /* DownloadOperation.swift */; };
 		D54D38DA23957A90002FE784 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D38D923957A90002FE784 /* Reachability.swift */; };
 		D59745202393C71100F5DDA2 /* BreedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597451F2393C71100F5DDA2 /* BreedTableViewController.swift */; };
-		D597452C2393D1C700F5DDA2 /* BreedArrayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597452B2393D1C700F5DDA2 /* BreedArrayAPI.swift */; };
+		D597452C2393D1C700F5DDA2 /* BreedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597452B2393D1C700F5DDA2 /* BreedAPI.swift */; };
 		D59E7B542393DA1D0031AE9C /* ResourceNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844E18E9238D4B1100D6F38B /* ResourceNetworking.framework */; };
 		D59E7B552393DA1D0031AE9C /* ResourceNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 844E18E9238D4B1100D6F38B /* ResourceNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D5DEDBBF239D1BE700D89420 /* BreedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEDBBE239D1BE700D89420 /* BreedUI.swift */; };
+		D5DEDBBF239D1BE700D89420 /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEDBBE239D1BE700D89420 /* BreedView.swift */; };
 		D5DEDBC2239D20AA00D89420 /* BreedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEDBC0239D20AA00D89420 /* BreedTableViewCell.swift */; };
 		D5DEDBC3239D20AA00D89420 /* BreedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DEDBC1239D20AA00D89420 /* BreedTableViewCell.xib */; };
-		D5DEDBC5239D380A00D89420 /* BreedImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEDBC4239D380900D89420 /* BreedImageAPI.swift */; };
 		D5E819382392AEB8005A6F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E819372392AEB8005A6F18 /* AppDelegate.swift */; };
 		D5E8193A2392AEB8005A6F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E819392392AEB8005A6F18 /* SceneDelegate.swift */; };
 		D5E8193C2392AEB8005A6F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8193B2392AEB8005A6F18 /* ViewController.swift */; };
@@ -100,14 +98,12 @@
 		844E1923238D4DEC00D6F38B /* CancelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelTests.swift; sourceTree = "<group>"; };
 		844E1926238D511000D6F38B /* FakeReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeReachability.swift; sourceTree = "<group>"; };
 		D54D3810239EB9930067A5B7 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		D54D382423A01BE40067A5B7 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
 		D54D38D923957A90002FE784 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D597451F2393C71100F5DDA2 /* BreedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewController.swift; sourceTree = "<group>"; };
-		D597452B2393D1C700F5DDA2 /* BreedArrayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedArrayAPI.swift; sourceTree = "<group>"; };
-		D5DEDBBE239D1BE700D89420 /* BreedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedUI.swift; sourceTree = "<group>"; };
+		D597452B2393D1C700F5DDA2 /* BreedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedAPI.swift; sourceTree = "<group>"; };
+		D5DEDBBE239D1BE700D89420 /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
 		D5DEDBC0239D20AA00D89420 /* BreedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewCell.swift; sourceTree = "<group>"; };
 		D5DEDBC1239D20AA00D89420 /* BreedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedTableViewCell.xib; sourceTree = "<group>"; };
-		D5DEDBC4239D380900D89420 /* BreedImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageAPI.swift; sourceTree = "<group>"; };
 		D5E819352392AEB8005A6F18 /* iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E819372392AEB8005A6F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E819392392AEB8005A6F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,11 +240,9 @@
 		D59745282393CDBF00F5DDA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D597452B2393D1C700F5DDA2 /* BreedArrayAPI.swift */,
-				D5DEDBC4239D380900D89420 /* BreedImageAPI.swift */,
-				D5DEDBBE239D1BE700D89420 /* BreedUI.swift */,
+				D597452B2393D1C700F5DDA2 /* BreedAPI.swift */,
+				D5DEDBBE239D1BE700D89420 /* BreedView.swift */,
 				D54D38D923957A90002FE784 /* Reachability.swift */,
-				D54D382423A01BE40067A5B7 /* DownloadOperation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -484,17 +478,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DEDBC5239D380A00D89420 /* BreedImageAPI.swift in Sources */,
 				D5DEDBC2239D20AA00D89420 /* BreedTableViewCell.swift in Sources */,
-				D5DEDBBF239D1BE700D89420 /* BreedUI.swift in Sources */,
-				D54D382523A01BE40067A5B7 /* DownloadOperation.swift in Sources */,
+				D5DEDBBF239D1BE700D89420 /* BreedView.swift in Sources */,
 				D5E8193C2392AEB8005A6F18 /* ViewController.swift in Sources */,
 				D5E819382392AEB8005A6F18 /* AppDelegate.swift in Sources */,
 				D59745202393C71100F5DDA2 /* BreedTableViewController.swift in Sources */,
 				D54D3811239EB9930067A5B7 /* CircleButton.swift in Sources */,
 				D5E8193A2392AEB8005A6F18 /* SceneDelegate.swift in Sources */,
 				D54D38DA23957A90002FE784 /* Reachability.swift in Sources */,
-				D597452C2393D1C700F5DDA2 /* BreedArrayAPI.swift in Sources */,
+				D597452C2393D1C700F5DDA2 /* BreedAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

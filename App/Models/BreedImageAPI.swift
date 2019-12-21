@@ -9,13 +9,6 @@ struct BreedImageAPI: Codable {
     var status: String
 }
 
-//https://dog.ceo/api/breed/hound/images/random Fetch!
-//https://dog.ceo/api/breed/bulldog-french/images/random
-//    "message": "https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg",
-//get a sub breed random image
-//https://dog.ceo/api/breed/hound/afghan/images/random
-
-
 class ImageResourceFactor {
     func createResource(breed: String, subbreed: String = "") -> Resource<BreedImageAPI> {
         let path = subbreed.isEmpty ? breed : breed + "/" + subbreed

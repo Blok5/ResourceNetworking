@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        
         print("loadView")
         
         //button.setTitle("IGOR", for: .normal)

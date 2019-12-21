@@ -15,12 +15,12 @@ class DownloadOperation: Operation {
     
     private var state : OperationState = .ready {
         willSet {
-            self.willChangeValue(forKey: "isExecuting")
-            self.willChangeValue(forKey: "isFinished")
+            willChangeValue(forKey: "isExecuting")
+            willChangeValue(forKey: "isFinished")
         }
         didSet {
-            self.didChangeValue(forKey: "isExecuting")
-            self.didChangeValue(forKey: "isFinished")
+            didChangeValue(forKey: "isExecuting")
+            didChangeValue(forKey: "isFinished")
         }
     }
     
@@ -30,7 +30,6 @@ class DownloadOperation: Operation {
     
     init(session: URLSession, downloadTaskURL: URL, completionHandler: ((URL?, URLResponse?, Error?) -> Void)?) {
         super.init()
-        
         task = session.downloadTask(with: downloadTaskURL, completionHandler: { [weak self] (localURLOrNil, responseOrNil, errorOrNil) in
             if let completionHandler = completionHandler {
                 completionHandler(localURLOrNil, responseOrNil, errorOrNil)
@@ -46,7 +45,6 @@ class DownloadOperation: Operation {
             return
         }
         state = .executing
-        print("downloading")
         self.task.resume()
     }
     
