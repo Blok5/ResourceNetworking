@@ -5,6 +5,7 @@
 import UIKit
 import ResourceNetworking
 import Foundation
+import Network
 
 class BreedTableViewController: UIViewController {
     
@@ -26,39 +27,49 @@ class BreedTableViewController: UIViewController {
         _ = networkHelper.load(resource: ResourceFactor().createBreedsResource()) { [weak self] result in
             switch result {
             case let .success(breeds):
-               
                 var breedViews: [BreedView] = []
                 
-                breeds.message.forEach { (key: String, value: [String]) in
-                    switch value.count {
-                    case 0:
-                        let breedView = BreedView(breed: key, subbreed: nil)
-                        breedView.delegate = self
-                        breedViews.append(breedView)
-                    default:
-                        value.forEach { (subbreed) in
-                            let breedView = BreedView(breed: key, subbreed: subbreed)
-                            breedView.delegate = self
-                            breedViews.append(breedView)
-                        }
+                let res: [[BreedView]] = breeds.message.compactMap { [weak self] key, value in
+                    let values: [String?] = value.count > 0 ? value: [nil]
+                    return values.map { (subbreed) in
+                        let subbreed = BreedView(breed: key, subbreed: subbreed)
+                        subbreed.delegate = self
+                        return subbreed
                     }
                 }
                 
-                for dog in breedViews {
-                    print(dog.description)
-                }
+                breedViews = res.reduce([], +)
+                
+//                breeds.message.forEach { (key: String, value: [String]) in
+//                    switch value.count {
+//                    case 0:
+//                        let breedView = BreedView(breed: key, subbreed: nil)
+//                        breedView.delegate = self
+//                        breedViews.append(breedView)
+//                    default:
+//                        value.forEach { (subbreed) in
+//                            let breedView = BreedView(breed: key, subbreed: subbreed)
+//                            breedView.delegate = self
+//                            breedViews.append(breedView)
+//                        }
+//                    }
+//                }
                 
                 self?.breedListForUI = breedViews
                 self?.breedListForUI.sort(by: <)
+                
                 DispatchQueue.main.async { [weak self] in
                     self?.tableView.reloadData()
                 }
                 
-            case .failure(_):
+            case let .failure(error):
+                print("eeerrrr", error)
                 break
+            
             }
             
         }
+        
     }
     
     func registerTableViewCells() {
@@ -75,7 +86,6 @@ extension BreedTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.BreedTableViewCell.rawValue) as! BreedTableViewCell
-        
         cell.configuration(breed: breedListForUI[indexPath.row])
         return cell
     }
