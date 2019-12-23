@@ -22,17 +22,16 @@
                         <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="QDS-wX-Cyd" secondAttribute="height" multiplier="1:1" id="1Ab-Kc-4HK"/>
-                            <constraint firstAttribute="width" constant="106" id="1nr-K1-ChK"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" verticalCompressionResistancePriority="749" text="Labelssdas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-se-QQJ">
-                        <rect key="frame" x="10" y="38" width="356" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <rect key="frame" x="10" y="43.5" width="356" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <activityIndicatorView opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OKK-K0-jso">
-                        <rect key="frame" x="400.5" y="34.5" width="37" height="37"/>
+                    <activityIndicatorView opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="OKK-K0-jso">
+                        <rect key="frame" x="409" y="43" width="20" height="20"/>
                         <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </activityIndicatorView>
                 </subviews>

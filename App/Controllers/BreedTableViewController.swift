@@ -40,21 +40,6 @@ class BreedTableViewController: UIViewController {
                 
                 breedViews = res.reduce([], +)
                 
-//                breeds.message.forEach { (key: String, value: [String]) in
-//                    switch value.count {
-//                    case 0:
-//                        let breedView = BreedView(breed: key, subbreed: nil)
-//                        breedView.delegate = self
-//                        breedViews.append(breedView)
-//                    default:
-//                        value.forEach { (subbreed) in
-//                            let breedView = BreedView(breed: key, subbreed: subbreed)
-//                            breedView.delegate = self
-//                            breedViews.append(breedView)
-//                        }
-//                    }
-//                }
-                
                 self?.breedListForUI = breedViews
                 self?.breedListForUI.sort(by: <)
                 
@@ -76,7 +61,6 @@ class BreedTableViewController: UIViewController {
         tableView.register(UINib(nibName: CellIdentifiers.BreedTableViewCell.rawValue, bundle: nil), forCellReuseIdentifier:
             CellIdentifiers.BreedTableViewCell.rawValue)
     }
-    
 }
 
 extension BreedTableViewController: UITableViewDataSource {
@@ -107,8 +91,8 @@ extension BreedTableViewController: BreedViewDelegate {
         guard let row = breedListForUI.firstIndex(of: breed) else {
             return
         }
-        DispatchQueue.main.async {
-            self.tableView.reloadRows(at: [IndexPath(row: row, section: 0)], with: .automatic)
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadRows(at: [IndexPath(row: row, section: 0)], with: .automatic)
         }
     }
 }
