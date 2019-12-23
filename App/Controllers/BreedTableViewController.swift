@@ -29,7 +29,7 @@ class BreedTableViewController: UIViewController {
             case let .success(breeds):
                 var breedViews: [BreedView] = []
                 
-                let res: [[BreedView]] = breeds.message.compactMap { [weak self] key, value in
+                let res: [[BreedView]] = breeds.message.compactMap { [weak self] (key: String, value: [String]) in
                     let values: [String?] = value.count > 0 ? value: [nil]
                     return values.map { (subbreed) in
                         let dog = BreedView(breed: key, subbreed: subbreed)
