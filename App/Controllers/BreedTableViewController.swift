@@ -32,9 +32,9 @@ class BreedTableViewController: UIViewController {
                 let res: [[BreedView]] = breeds.message.compactMap { [weak self] key, value in
                     let values: [String?] = value.count > 0 ? value: [nil]
                     return values.map { (subbreed) in
-                        let subbreed = BreedView(breed: key, subbreed: subbreed)
-                        subbreed.delegate = self
-                        return subbreed
+                        let dog = BreedView(breed: key, subbreed: subbreed)
+                        dog.delegate = self
+                        return dog
                     }
                 }
                 
