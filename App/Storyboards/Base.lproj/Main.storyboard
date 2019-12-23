@@ -67,7 +67,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npv-af-NVy"/>
                                     <segue destination="4fs-AZ-W3C" kind="show" id="v0H-5b-Ml2"/>
                                 </connections>
                             </button>
@@ -80,9 +79,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wpY-dq-5vA"/>
-                    <connections>
-                        <outlet property="button" destination="45F-WP-1AR" id="iSd-lr-xPp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
